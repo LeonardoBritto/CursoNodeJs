@@ -1,0 +1,12 @@
+ <h1>Ola Konoha!</h1> 
+ {{#if approved}}
+    <p>Parabéns, cadastro aprovado</p>
+ {{else}}
+    <p>O seu cadastro esta incompleto</p>
+ {{/if}}
+ <p>O nome do usuário é {{user.name}} {{user.surname}} e ele tem {{user.age}} anos</p>
+ {{#if auth}}
+    <p>
+        Voce esta autenticado, <a href="/dashboard">clique aqui</a> para acessar a área de membros!
+    </p>
+ {{/if}}
