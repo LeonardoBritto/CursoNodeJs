@@ -1,0 +1,11 @@
+const fs = require('fs')
+
+console.log('Inicio')
+
+fs.writeFile('Arquivo.txt', 'Leo', function(err) {
+    setTimeout(() => {
+        console.log('Arquivo criado!')     
+    },2500);
+})
+
+console.log('Fim')
